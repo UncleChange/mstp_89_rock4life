@@ -1,0 +1,91 @@
+/*
+Toast Framework - grid.css
+*/
+.wrapper
+{
+    width: 100%;
+    margin-top: 80px;
+}
+.wrap
+{
+    max-width: 940px;
+    padding: 10px 15px 10px 30px;
+    margin: 0 auto;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.8);
+    min-height: 600px;
+}
+/*
+Column container
+*/
+.grids {
+  width: auto;
+  max-width: 1000px;
+  margin: 0 0 0 -1.7%;
+  list-style: none;
+  /* So we can make grids out of lists. */
+
+  overflow: hidden;
+  /* Clear the floats */
+
+  letter-spacing: -.25em; /* Fix inline-block weirdness */
+}
+.grids [class*="grid-"]
+{
+    display: inline-block;
+    margin: 0 0 0 1.7%;
+    -webkit-box-sizing: border-box; /* Allow padding & borders on grids without breaking. IE8+ */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: top;
+    letter-spacing: 0; /* And restore our letter spacing. */
+    padding: 15px;
+}
+.grid-1 {
+  width: 6.15%;
+}
+.grid-2 {
+  width: 14.583%;
+}
+.grid-3 {
+  width: 22.917%;
+}
+.grid-4, .grid-one-third {
+  width: 31.25%;
+}
+.grid-5 {
+  width: 39.583%;
+}
+.grid-6, .grid-half {
+  width: 47.917%;
+}
+.grid-7 {
+  width: 56.25%;
+}
+.grid-8, .grid-two-thirds {
+  width: 64.583%;
+}
+.grid-9 {
+  width: 72.917%;
+}
+.grid-10 {
+  width: 81.25%;
+}
+.grid-11 {
+  width: 89.583%;
+}
+.grid-12 {
+  width: 97.917%;
+  margin: 0;
+}
+@media screen and (max-width: 700px) {
+  .grids {
+    margin: 0;
+    width: auto;
+  }
+  .grids [class*="grid-"] {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+}
